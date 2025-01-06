@@ -8,9 +8,9 @@ const items = Array(105)
 export default function page(): ReactElement {
     return (
       <div className={styles.page}>
-      <div className={styles.filters}>filter
-      <button>زوج</button>
-      <button>فرد</button>
+      <div className={styles.filters}>فیلتر زوج یا فرد
+      <button className={styles.btn}>زوج</button>
+      <button className={styles.btn}>فرد</button>
 
       </div>
       <ul className={styles.results}>

@@ -1,4 +1,5 @@
-import { ReactElement } from "react";
+"use client";
+import { ReactElement, useState } from "react";
 import styles from './page.module.css';
 
 const items = Array(105)
@@ -6,16 +7,24 @@ const items = Array(105)
 .map((_,i)=>i+1);
 
 export default function page(): ReactElement {
+  const [odd,setOdd]=useState(false);
+  const [even,setEven]=useState(false);
+  const changeodd=()=>{setOdd((odd)=>!odd);console.log('odd=',odd)}
+  const changeeven=()=>{setEven((even)=>!even);console.log('even=',even)}
+  
     return (
       <div className={styles.page}>
       <div className={styles.filters}>فیلتر زوج یا فرد
-      <button className={styles.btn}>زوج</button>
-      <button className={styles.btn}>فرد</button>
+      <button className={styles.btn} onClick={()=>changeeven()}>زوج</button>
+      <button className={styles.btn} onClick={()=>changeodd()}>فرد</button>
 
       </div>
       <ul className={styles.results}>
       {items.map((item)=>(
-        <li key={item} className={item % 2 === 0 ? styles.active : ''}>{item}</li>
+//        <li key={item} className={(odd&&(item % 2 !== 0)) ? styles.active : ''}>{item}</li>
+        <li key={item} className={((odd&&(item % 2 !== 0))||(even&&(item % 2 === 0))) ? styles.active : ''}
+                                            
+        >{item}</li>
       ))}
       </ul>
       </div>

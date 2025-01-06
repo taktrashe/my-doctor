@@ -15,8 +15,8 @@ export default function page(): ReactElement {
     return (
       <div className={styles.page}>
       <div className={styles.filters}>فیلتر زوج یا فرد
-      <button className={styles.btn} onClick={()=>changeeven()}>زوج</button>
-      <button className={styles.btn} onClick={()=>changeodd()}>فرد</button>
+      <button className={even ? styles.btnactive : styles.btn} onClick={()=>changeeven()}>زوج</button>
+      <button className={odd ? styles.btnactive : styles.btn} onClick={()=>changeodd()}>فرد</button>
 
       </div>
       <ul className={styles.results}>

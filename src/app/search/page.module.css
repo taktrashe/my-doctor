@@ -24,6 +24,17 @@
             background-color: var(--color-primary);
             color:var(--color-primary-opposite);
         }
+    }
+        .btnactive{
+            cursor: pointer;
+            height:30px;
+            width : 100px;
+            margin-right: 10px;
+                background-color: var(--color-primary);
+            color:var(--color-primary-opposite);
+       
+
+        
       }
     }
 

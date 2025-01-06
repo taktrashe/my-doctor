@@ -1,65 +1,60 @@
 .page {
-    border: 2px solid red;
-    height:550px;
-    margin-top: 10px;
+  /* border: 2px solid red; */
+  height: 550px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: start;
+  gap: 1rem;
+
+  margin-block-end: 2rem;
+
+  .filters {
+    border: 2px solid green;
+    height: 140px;
+
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    align-items: start;
     gap: 1rem;
-  
-    margin-block-end: 2rem;
-  
-    .filters {
-        border: 2px solid green;
-        height: 140px;
-
-      display: grid;
-      gap: 1rem;
-      .btn{
-        cursor: pointer;
-        height:30px;
-        width : 100px;
-        margin-right: 10px;
-        &:hover{
-            background-color: var(--color-primary);
-            color:var(--color-primary-opposite);
-        }
-    }
-        .btnactive{
-            cursor: pointer;
-            height:30px;
-            width : 100px;
-            margin-right: 10px;
-                background-color: var(--color-primary);
-            color:var(--color-primary-opposite);
-       
-
-        
+    .btn {
+      cursor: pointer;
+      height: 30px;
+      width: 100px;
+      margin-right: 10px;
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-primary-opposite);
       }
     }
-
-    .results {
-        display:grid;
-        grid-template-columns: repeat(auto-fill,minmax(3.4rem,1fr));
-        gap: 0.5rem;
-        margin-top: 10px;
-        margin-left: 10px;
-
-        border: 2px solid green;
-        height: 450px;
-        >li{
-            display:grid;
-            place-content:center  ;
-            background-color: transparent;
-            color:aqua;
-            border: 1px solid white;
-            border-radius: var(--border-radius);
-            aspect-ratio: 1/1;
-            &.active{
-                background-color:var(--color-primary);
-            }
-        }
-
-    }  
-
+    .btnactive {
+      cursor: pointer;
+      height: 30px;
+      width: 100px;
+      margin-right: 10px;
+      background-color: var(--color-primary);
+      color: var(--color-primary-opposite);
+    }
   }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3.4rem, 1fr));
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    /* border: 2px solid green; */
+    height: 450px;
+    > li {
+      display: grid;
+      place-content: center;
+      background-color: transparent;
+      color: aqua;
+      border: 1px solid white;
+      border-radius: var(--border-radius);
+      aspect-ratio: 1/1;
+      &.active {
+        background-color: var(--color-primary);
+      }
+    }
+  }
+}

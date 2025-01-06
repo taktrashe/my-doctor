@@ -6,7 +6,7 @@ const items = Array(105)
   .fill(null)
   .map((_, i) => i + 1);
 
-export default function page(): ReactElement {
+export default function Page(): ReactElement {
   const [odd, setOdd] = useState(false);
   const [even, setEven] = useState(false);
   const changeodd = () => {

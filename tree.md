@@ -1,0 +1,45 @@
+```
+└── 📁src
+    └── 📁app
+        └── error.module.css
+        └── error.tsx
+        └── favicon.ico
+        └── globals.css
+        └── layout.tsx
+        └── not-found.module.css
+        └── not-found.tsx
+        └── page.module.css
+        └── page.tsx
+        └── 📁search
+            └── page.module.css
+            └── page.tsx
+    └── 📁assets
+        └── 📁illustrations
+            └── error.svg
+            └── not-found.svg
+        └── 📁logo
+            └── certificate.svg
+            └── enamad.svg
+            └── idk.svg
+            └── my-doctor.svg
+    └── 📁components
+        └── 📁footer
+            └── footer.component.tsx
+            └── footer.module.css
+        └── 📁global-search-box
+            └── global-search-box.component.tsx
+            └── global-search-box.module.css
+        └── 📁header
+            └── header.component.tsx
+            └── header.module.css
+    └── 📁icons
+        └── MingcuteLinkedinFill.tsx
+        └── MingcuteLocationLine.tsx
+        └── MingcuteSearchLine.tsx
+        └── MingcuteTelegramFill.tsx
+        └── MingcuteYoutubeFill.tsx
+    └── 📁logo
+        └── my-doctor.logo.tsx
+    └── 📁styles
+        └── typography.css
+```

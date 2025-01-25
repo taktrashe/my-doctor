@@ -309,34 +309,34 @@ export default function Page(): ReactElement {
         <div className={styles.filters}>
           فیلترها
           <button
-            className={brief2 ? styles.btnactive : styles.btn}
+            className={brief2 ? styles.buttonactive : styles.button}
             onClick={() => changeeven()}
           >
             متخصص چشم پزشکی
           </button>
           <button
-            className={brief1 ? styles.btnactive : styles.btn}
+            className={brief1 ? styles.buttonactive : styles.button}
             onClick={() => changeodd()}
           >
             متخصص اطفال
           </button>
         </div>
       </div>
-      <div className={styles.carddd}>
+      <div>
         لیست دکترها
         {/* {doctors.map((doctor) => ( */}
         {doctorsfil.map((doctor) => (
-          <div key={doctor.id} className={styles.cardd}>
+          <div key={doctor.id} className={styles.card_up}>
             <div key={doctor.id} className={styles.card} dir="rtl">
               {/* <div style={{display:"none"}}>{nafarat+=parseInt(doctor.nafar,10)}{doctorha+=1} </div> */}
               {/* this is home */}
               {/* <img className="Pic2" src={mypic} alt="some pic"></img> */}
               <span className={styles.id}>id : {doctor.id}</span>
-              <span className={styles.test1}>
+              <span className={styles.rate}>
                 {" "}
                 Rating : {doctor.averageRating}
               </span>
-              <div className={styles.titr} dir="rtl">
+              <div className={styles.title} dir="rtl">
                 <img
                   className={styles.img}
                   src={`https://cdn.paziresh24.com${doctor.image}`}
